@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@300&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet"> 
+    <title>To-Do app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="todo">
+            <h2>To-Do List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input type="text" name="input-box" id="input-box" placeholder="Add your text">
+                <button id ="btnadd" onclick="addTask()">Add</button>
+            </div>
+            <div id="message-container"></div>
+            <ul id="list-container">
+                <li>
+                    <div class="task-text">
+                        <span></span>
+                    </div>
+                    <div class="divbtn">
+                    <span class="delete"></span>
+                    <button class="edit-button"></button>
+                    </div>
+                </li>
+            </ul>
+            <div id="clear-all-container">
+                <button id="clear-all-button">Clear All</button>
+            </div>              
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
